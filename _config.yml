@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Muhammad Falensi Azmi / Portofolio Website"
+title                    : "Muhammad Falensi Azmi"
 title_separator          : "-"
 name                     : &name "Muhammad Falensi Azmi"
 description              : &description "My Official Portofolio Website"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Muhammad Falensi Azmi"
   pronouns         : "he/him" # example: "she/her"  
-  bio              : "NLP Researcher from Indonesia"
+  bio              : "NLP Researcher"
   location         : "South Tangerang, Indonesia"
   employer         : 
   uri              : "https://falensiazmi.github.io/" # URL
