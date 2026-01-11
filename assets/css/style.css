@@ -1,0 +1,84 @@
+/* The Main Container */
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    min-height: 100vh;
+}
+
+/* LEFT SIDE: Adaptive Sidebar */
+.sidebar {
+    /* 1. FLEXIBLE WIDTH */
+    flex: 0 0 280px; /* FIXED width approach is often more stable than % for sidebars */
+    width: 280px; 
+    
+    /* 2. POSITIONING */
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    
+    /* 3. SCROLL SAFETY */
+    overflow-y: auto; 
+
+    /* 4. LOOK & FEEL */
+    background-color: #90D5FF;
+    /* Reduced horizontal padding from 40px to 20px to give text more room */
+    padding: 40px 20px; 
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+    
+    /* Align everything to center */
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* FIX 1: Control Profile Image Size */
+.profile-img {
+    width: 150px;       /* Set a nice fixed size */
+    height: 150px;      /* Keep it square */
+    object-fit: cover;  /* Ensures image doesn't stretch/distort */
+    border-radius: 50%; /* Circle */
+    margin-bottom: 20px;
+    border: 3px solid #ddd; /* Optional: adds a nice border */
+}
+
+/* FIX 2: Allow Name to Wrap */
+.sidebar h1 {
+    white-space: normal; /* Allow wrapping */
+    word-wrap: break-word; /* Break long words if necessary */
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    width: 100%; /* Ensure it uses full width of sidebar */
+}
+
+/* Social Icons Container */
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows icons to wrap if space is tight */
+    gap: 15px; /* Space between icons */
+    margin-top: 20px;
+    font-size: 20px; /* Slightly smaller icons for better fit */
+}
+
+/* RIGHT SIDE: Content */
+.content {
+    flex: 1; 
+    min-width: 0; /* allows flex item to shrink below content size if needed */
+    padding: 60px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .sidebar { 
+        width: 100%; 
+        height: auto; 
+        position: relative; 
+        padding: 30px;
+        flex: none; /* Disable the fixed flex width on mobile */
+    }
+}

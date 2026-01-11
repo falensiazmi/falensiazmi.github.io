@@ -1,0 +1,27 @@
+# 1. Jekyll Build Artifacts (CRITICAL)
+# Never commit the "_site" folder; GitHub Pages builds this automatically.
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# 2. Ruby / Bundler
+# If you install gems locally to "vendor", don't commit them.
+.bundle/
+vendor/
+
+# 3. Operating System Files
+# Mac
+.DS_Store
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# 4. Editors & IDEs
+.vscode/
+.idea/
+*.swp
+
+# 5. Node/NPM (If you use any JS tools later)
+node_modules/
+package-lock.json
