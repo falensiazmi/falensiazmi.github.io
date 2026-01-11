@@ -1,0 +1,66 @@
+/* assets/css/publications.css */
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds consistent space between cards */
+}
+
+.pub-card {
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-decoration: none; /* Removes default link underline if wrapper is a link */
+  color: inherit;
+  display: block; /* Ensures div behavior */
+}
+
+/* Hover Effect: Move right & shadow */
+.pub-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-left: 4px solid #0366d6;
+}
+
+.pub-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #0366d6;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.pub-authors {
+  font-size: 0.95em;
+  color: #24292e;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.pub-venue {
+  font-size: 0.9em;
+  color: #586069;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.pub-links a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 0.85em;
+  text-decoration: none;
+  color: #0366d6;
+  font-weight: 600;
+  border: 1px solid #e1e4e8;
+  padding: 4px 10px;
+  border-radius: 15px;
+  transition: background 0.2s;
+}
+
+.pub-links a:hover {
+  background-color: #f1f8ff;
+}

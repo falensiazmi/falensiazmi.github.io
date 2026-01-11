@@ -88,3 +88,65 @@ body, html {
     padding: 0;
     width: 100%;
 }
+
+/* --- TABLE STYLING --- */
+
+/* 1. Basic Layout */
+.content table {
+    width: 100%;
+    border-collapse: collapse; /* Removes double borders */
+    margin: 25px 0;
+    font-size: 0.95rem; /* Slightly smaller looks cleaner */
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+}
+
+/* 2. The Header Row */
+.content table thead tr {
+    background-color: #f8f9fa; /* Light grey header */
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd; /* Thicker line under header */
+}
+
+/* 3. Cells (Header & Body) */
+.content table th,
+.content table td {
+    padding: 12px 15px; /* Comfortable spacing */
+}
+
+/* 4. Body Rows */
+.content table tbody tr {
+    border-bottom: 1px solid #eee; /* Thin line between rows */
+}
+
+/* 5. Date Column Specifics (Optional) */
+/* This targets the first column to make the date text nowrap */
+.content table td:first-child {
+    white-space: nowrap;
+    color: #666; /* Slightly lighter color for dates */
+    font-weight: 500;
+}
+
+/* 6. Hover Effect (Optional) */
+.content table tbody tr:hover {
+    background-color: #f1f1f1; /* Highlights row on mouse over */
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* --- New Styles for Layout --- */
+
+/* 1. Make the separator thinner and lighter */
+hr {
+  border: 0;                  /* Remove default 3D border */
+  height: 1px;                /* Make it very thin */
+  background-color: #e1e4e8;  /* Light gray color (GitHub style) */
+  margin: 40px 0;             /* Adds 40px of space above and below the line */
+}
+
+/* 2. Increase gap above subtitles (H2) */
+h2 {
+  margin-top: 60px;           /* Large space above the title */
+  margin-bottom: 25px;        /* Moderate space below the title */
+}
