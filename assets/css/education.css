@@ -13,9 +13,10 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 120px; /* Adjusts horizontal position of the line */
+  left: 120px;
   width: 2px;
-  background-color: #e1e4e8;
+  background-color: #d1d5da; /* Made slightly darker so it's visible */
+  z-index: 0; /* Forces it to sit BEHIND the content */
 }
 
 .edu-item {
@@ -44,7 +45,8 @@
   border-radius: 50%;
   background-color: #ffffff;
   border: 2px solid #0366d6; /* Your theme blue */
-  z-index: 1; /* Sits on top of the line */
+  z-index: 2; /* Forces it ABOVE the line */
+  background-color: #fff; /* Ensures line doesn't show through the dot */
 }
 
 /* RIGHT COLUMN: Content */

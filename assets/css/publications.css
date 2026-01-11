@@ -64,3 +64,27 @@
 .pub-links a:hover {
   background-color: #f1f8ff;
 }
+
+/* --- Table Styling (Fix for GitHub Pages) --- */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Removes double borders */
+  margin-bottom: 20px;
+  border: 1px solid #e1e4e8; /* Outer border */
+}
+
+th, td {
+  padding: 10px 15px;
+  border: 1px solid #e1e4e8; /* Inner borders */
+  text-align: left;
+}
+
+th {
+  background-color: #f6f8fa; /* The grey header background you wanted */
+  font-weight: 600;
+  color: #24292e;
+}
+
+tr:nth-child(even) {
+  background-color: #fbfcfd; /* Optional: Slight zebra striping for readability */
+}
