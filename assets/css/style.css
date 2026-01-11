@@ -24,7 +24,6 @@
     /* Reduced horizontal padding from 40px to 20px to give text more room */
     padding: 40px 20px; 
     box-sizing: border-box;
-    border-right: 1px solid #ddd;
     
     /* Align everything to center */
     text-align: center; 
@@ -81,4 +80,11 @@
         padding: 30px;
         flex: none; /* Disable the fixed flex width on mobile */
     }
+}
+
+/* GLOBAL RESET */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
